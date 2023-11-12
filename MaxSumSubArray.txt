@@ -1,0 +1,23 @@
+algorithm maxsum
+variables tableau h(100) sum , start ,end,i,j,k:entier 
+debut
+max = h[0]
+ sum = 0
+ start =0
+ end = 0
+pour  i <- 0 a len(h) fair 
+     pour j <- i a len(h)) fair
+         sum = 0 
+         pour k <- i a j + 1:
+             sum =sum +  h[k]
+         fin pour    
+            
+         si sum > max:
+             max = sum
+             start = i
+             end = j
+     fin pour    
+fin pour             
+pour i <- start a end fair 
+     ecrire(i)
+fin pour
