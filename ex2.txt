@@ -1,0 +1,28 @@
+algorithme algoMat
+variable tableau mat(n,p),i,j,c :entier
+debut 
+ecrire("enter n et p")
+lire(n,p)
+c=0
+pour i<- 0 a n-1 pas faire
+  pour j<- 0 a p-1 pas 1 faire
+    c=c+1
+    mat(i,j)<- c
+    ecrire(mat(i,j))
+  fin pour 
+fin pour
+c=0
+pour i<- 0 a n-1 pas faire
+  pour j<- 0 a p-1 pas 1 faire
+    si i =0 alors
+      c=c+1
+      mat(i,j)<- c
+    si non 
+      c=c -1
+      mat(i,j)<- c-1
+    fin si
+  fin pour 
+  c= c+4 
+fin pour
+fin
+
