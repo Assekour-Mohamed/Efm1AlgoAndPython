@@ -1,0 +1,17 @@
+fonction isleap( yrear : entier) :boolean
+debut
+si year mod 4=0 et year mod 100 <> 0 alors
+  return vrai
+sinon
+return faux
+fin si
+fin 
+fonction leapIncentry( a : entier) : entier
+variable y : entier
+debut 
+y = a * 100 - 100
+pour i <- y a a * 100 pas 1 faire
+  si isleap(i) alors:
+    ecrire(i)
+  fin si
+fin
